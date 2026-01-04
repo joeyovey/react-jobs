@@ -6,14 +6,14 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MainLayout from "./layouts/MainLayout";
-import JobPage from "./pages/JobsPage";
+import JobsPage from "./pages/JobsPage";
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
   <Route path="/" element={<MainLayout />}>
     <Route index element={<HomePage />} />
-    <Route path="/job" element={<JobPage />} />
+    <Route path="/jobs" element={<JobsPage />} />
   </Route>
   )
 )
